@@ -13,3 +13,5 @@ Our goal with this analysis is to uncover patterns and insights in the dataset a
 
 Through the EDA, we employ various data visualization and data manipulation techniques to delve into these questions. The insights gathered will not only help us understand the dataset better but also enable us to build a more accurate predictive model in the future.
 Each research question is addressed in a separate section, allowing for an organized and thorough investigation. We hope this analysis provides valuable insights into flight price variations and aids in the development of effective prediction models.
+
+![image](https://github.com/Thebtiboutheina/Flight-Price-Prediction/assets/58167996/712a5bf2-c627-4989-8ca7-562300ebbf56)
