@@ -12,12 +12,15 @@ The results obtained from the models were as follows:
 	Gradient Boosting	2910.739788	 24000176.98	0.953062
 	XGBoost	                2291.345928	 16060929.54	0.968589
 
+The Random Forest (RF) model's results are indeed very good, and among the models you've tried, it's the best. It has a very high R2 score of approximately 0.985, which is very close to the perfect score of 1. This suggests that the RF model can explain approximately 98.5% of the variation in the flight prices, which is quite high.
+The Mean Absolute Error (MAE) of the RF model is approximately 1069.55. This indicates that on average, the model's predictions are around $1069.55 off from the actual prices. This might sound like a lot, but in the context of flight prices, which can vary widely and can be quite high, this error could be acceptable depending on the range of flight prices in your dataset.
+The Mean Squared Error (MSE) is also relatively low. Remember that MSE tends to penalize larger errors more severely than smaller ones, due to the squaring of the residuals.
+![image](https://github.com/Thebtiboutheina/Flight-Price-Prediction/assets/58167996/712a5bf2-c627-4989-8ca7-562300ebbf56)
 
-This notebook presents an extensive exploratory data analysis of the "Flight Price Prediction" dataset available on Kaggle (https://www.kaggle.com/datasets/shubhambathwal/flight-price-prediction/code?resource=download).
-The dataset consists of multiple features related to flight details, including the airline, flight number, source city, departure time, number of stops, arrival time, destination city, class of travel, duration of flight, days left before departure, and ticket price.
+## Exploratory Data Analysis:
+We performed exploratory data analysis to understand the distribution of data, relationship among features, and identify any potential outliers. The "Flight Price Prediction" dataset available on Kaggle (https://www.kaggle.com/datasets/shubhambathwal/flight-price-prediction/code?resource=download). We analyzed the correlation of different features with the flight price, investigated the relationship between the number of stops and flight prices for different classes, and analyzed the impact of the time of departure and arrival on ticket price.
 Our goal with this analysis is to uncover patterns and insights in the dataset and, ultimately, to understand the factors influencing the flight prices.
-
-## The EDA is structured around five main research questions:
+The EDA is structured around five main research questions:
 
 1. Does the price vary across different airlines?
 2. How is the price affected when tickets are bought just 1 or 2 days before departure?
@@ -25,7 +28,13 @@ Our goal with this analysis is to uncover patterns and insights in the dataset a
 4. How does the price change with different source and destination cities?
 5. How does the ticket price vary between Economy and Business class flights?
 
-Through the EDA, we employ various data visualization and data manipulation techniques to delve into these questions. The insights gathered will not only help us understand the dataset better but also enable us to build a more accurate predictive model in the future.
-Each research question is addressed in a separate section, allowing for an organized and thorough investigation. We hope this analysis provides valuable insights into flight price variations and aids in the development of effective prediction models.
+## Outliers:
+Outliers were identified using the IQR method but considering the nature of the dataset and the problem at hand, these outliers were kept in the dataset, considering them as possible normal values.
 
-![image](https://github.com/Thebtiboutheina/Flight-Price-Prediction/assets/58167996/712a5bf2-c627-4989-8ca7-562300ebbf56)
+## Feature Engineering:
+We performed Label Encoding on ordinal variables and One-Hot-Encoding on nominal categorical variables to transform them into a form that could be provided to machine learning algorithms.
+Model Building and Evaluation
+We split our dataset into a training set and a test set. Then, we built and evaluated several machine learning models including Linear Regression, Random Forest, Linear SVM, Gradient Boosting, and XGBoost. The models were evaluated using Mean Absolute Error (MAE), Mean Squared Error (MSE), and R2 Score.
+
+## Conclusion
+The Random Forest model provided the best performance among the models we tested, achieving a high R2 score and a relatively low Mean Absolute Error. These results indicate that the model can accurately predict flight prices, as it can explain 98.5% of the variation in flight prices.
