@@ -2,7 +2,7 @@
 
 ## Project Overview
 This project is about building models to predict flight prices based on various features, using the Flight Price Prediction dataset from Kaggle. The models were trained and evaluated on various features including airlines, flight number, departure time, stops, arrival time, class, duration, and days left for the flight.
-
+## Results
 The results obtained from the models were as follows:
 
 	Model            	MAE	         MSE	        R2 Score
