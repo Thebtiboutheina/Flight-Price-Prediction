@@ -7,10 +7,10 @@ The results obtained from the models were as follows:
 
 	Model            	MAE	         MSE	        R2 Score
 	Linear Regression	4580.820538	 46480151.13	0.909097
-        Random Forest	    1069.553350	 7433253.57	  0.985463
-	Linear SVM	      4951.540023	 65052444.78	0.872775
+        Random Forest	        1069.553350	 7433253.57	  0.985463
+	Linear SVM	        4951.540023	 65052444.78	0.872775
 	Gradient Boosting	2910.739788	 24000176.98	0.953062
-	XGBoost	          2291.345928	 16060929.54	0.968589
+	XGBoost	                2291.345928	 16060929.54	0.968589
 
 
 This notebook presents an extensive exploratory data analysis of the "Flight Price Prediction" dataset available on Kaggle (https://www.kaggle.com/datasets/shubhambathwal/flight-price-prediction/code?resource=download).
